@@ -1,5 +1,16 @@
 //EVENTI IN JAVASCRIPT
 
-const funzioneButton = function () {
-  console.log("QUESTA É UNA PROVA PER IL BUTTON");
+const funzioneButton = function (e) {
+  console.log("QUESTA É UNA PROVA PER IL BUTTON", e);
 };
+
+//metodo 2
+//creo il button
+
+const newButton = document.createElement("button");
+
+newButton.innerText = "CLICK";
+
+const div = document.getElementById("secondDiv");
+
+div.append(newButton);
