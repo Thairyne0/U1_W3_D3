@@ -13,4 +13,8 @@ newButton.innerText = "CLICK";
 
 const div = document.getElementById("secondDiv");
 
-div.append(newButton);
+newButton.onclick = function () {
+  console.log("click 2");
+};
+
+div.appendChild(newButton);
